@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+#include <cstdio>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    
+     int s,d,a,b,m,n;
+    cin>>s>>d;
+    cin>>a>>b;
+    cin>>m>>n;
+    int apple=0,oranges=0;
+    int v1[m];
+    int v2[n];
+    for(int i=0;i<m;i++)
+    {
+        cin>>v1[i];
+        int h=0;
+        h=a+v1[i];
+        if(h>=s && h<=d)
+        {
+            ++apple;
+            
+        }
+    }
+    
+    for(int j=0;j<n;j++)
+    {
+        cin>>v2[j];
+        int h=0;
+        h=b+v2[j];
+        if(h<=d && h>=s)
+        {
+            ++oranges;
+            
+        }
+    }
+    
+    cout<<apple<<"\n";
+    cout<<oranges<<"\n";
+    
+    return 0;
+}

@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+
+{
+    long k1,v1,k2,v2;
+    cin>>k1>>v1>>k2>>v2;
+    int flag=0;
+    for(long i=0;i<=100000;i++)
+    {
+        
+        k1=k1+v1;
+        k2=k2+v2;
+        if(k1==k2)
+        {
+            
+            flag=1;
+            break;
+        }
+        
+    }
+    
+    if(flag==1)
+    {
+        cout<<"YES";
+        
+    }
+    else{
+        cout<<"NO";
+    }
+    
+    
+    return 0;
+}

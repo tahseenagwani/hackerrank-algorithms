@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+#include <iostream>
+#include <cstdio>
+#include <vector>
+using namespace std;
+
+
+int main()
+{
+    
+    int a[60];
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
+        {
+            cin>>a[i];
+            int mod;
+            mod=a[i]%5;
+            if(a[i]<38)
+            {
+                cout<<a[i]<<"\n";
+            }
+            else if(mod>=3)
+            {
+                
+                a[i]=a[i]-mod+5;
+                cout<<a[i]<<"\n";
+            }
+            else{
+                cout<<a[i]<<"\n";
+            }
+            
+        }
+        return 0;
+}
+
